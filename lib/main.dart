@@ -16,7 +16,6 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: lights == true ? ThemeData.dark() : ThemeData.light(),
-      //theme: ThemeData.dark(),
       home: buildTheme(),
     );
   }
@@ -30,7 +29,6 @@ class _MyAppState extends State<MyApp> {
         child: ListTile(
           title: Text("Dark Mode"),
           trailing: CupertinoSwitch(
-            // enableOnOffLabels: MediaQuery.onOffSwitchLabelsEnabled(context)
             value: lights,
             onChanged: (bool value) {
               setState(() {
